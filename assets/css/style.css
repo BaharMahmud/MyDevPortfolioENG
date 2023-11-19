@@ -23,6 +23,7 @@ header{
     padding: 60px;
     position: relative;
     
+    
 
 }
 
@@ -32,10 +33,12 @@ header{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: absolute;
   top: 30px;
+  
 }
 header nav{
  position: absolute;
  top: 50px;
+ 
  
 }
 
@@ -70,30 +73,83 @@ height: 700px;
 justify-content: space-around;
 position: relative;
 height: 130vh;
-
+left: 10px;
 
 }
-.card{
-    position: relative;
-    
- }
 
+ .fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    left: 100px;
+    
+    
+  }
+ 
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);  }
  #first-greeting{
     position: absolute;
     top: 20px;
     left: 0;
+
    
+ }
+ .fa-github{
+    background-color: rgb(76, 67, 67);
+    color: black;
+ }
+
+ #first-greeting{
+
+margin: 0px;
+padding: 10px;
+position: relative;
+left: 80px;
+ }
+
+ #first-greeting h2{
+    margin-bottom:10px;
+ }
+ 
+
+ #first-greeting p{
+    margin-top: 10px;
+   margin-bottom: 20px;
+    position: relative;
+    right:  100px; 
+    position: relative;
+    right: 90px;
  }
 
  #about{
- 
+ margin-top: 30px;
     position: absolute;
-    top: 300px;
-    
+    top: 150px;
+    left: 250px;
 
  }
+ #about img{
+    position: absolute;
+    right: 1200px;
+ }
+.start-dev-journey{
+    text-decoration-thickness: 20PX;
+}
 
 #skills{
+    margin-left: 20px;
     position: absolute;
     left: 0;
     top: 530px;

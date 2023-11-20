@@ -4,11 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    
 }
 /* general settings for all body styling */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(32, 32, 211);
+  color: black;
  
  
   
@@ -17,6 +18,7 @@ body {
 header{
     background-color: rgb(91, 64, 64);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -28,7 +30,8 @@ header{
 }
 
  header h1{
-
+    
+color: blueviolet ;
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: absolute;
@@ -44,7 +47,7 @@ header nav{
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: center;
     list-style: none;
 }
@@ -66,40 +69,42 @@ color: rgb(39, 27, 117);
 }
  
 .hero{
-background-size: cover;
-display: flex;
-background-position: center;
-height: 700px;
-justify-content: space-around;
-position: relative;
-height: 130vh;
-left: 10px;
-
-}
-
- .fa {
-    padding: 20px;
-    font-size: 40px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    height: 700px;
+    justify-content: space-around;
     position: relative;
-    left: 100px;
+    height: 130vh;
+    left: 10px;
     
+    }
+
+    .fa {
+        padding: 10px;
+        font-size: 40px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        left: 150px;
+        
+        
+      }
+     
+      .fa:hover {
+        opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      .fa-instagram {
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);  }
     
-  }
  
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  .fa-instagram {
-background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);  }
- #first-greeting{
+#first-greeting{
     position: absolute;
     top: 20px;
     left: 0;
@@ -112,7 +117,6 @@ background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f
  }
 
  #first-greeting{
-
 margin: 0px;
 padding: 10px;
 position: relative;
@@ -121,6 +125,7 @@ left: 80px;
 
  #first-greeting h2{
     margin-bottom:10px;
+    box-shadow: #3B5998;   
  }
  
 
@@ -134,37 +139,91 @@ left: 80px;
  }
 
  #about{
- margin-top: 30px;
-    position: absolute;
-    top: 150px;
-    left: 250px;
+    margin-top: 30px;
+       position: absolute;
+       top: 150px;
+       left: 0px;
+   
+    }
+    #about img{
+      
+       width: 100;
+       float: left;
+    }
 
- }
- #about img{
-    position: absolute;
-    right: 1200px;
- }
-.start-dev-journey{
-    text-decoration-thickness: 20PX;
-}
+
+.emphasized{
+font-weight: bold;}
 
 #skills{
+    display: flex;
     margin-left: 20px;
     position: absolute;
     left: 0;
-    top: 530px;
+    top: 450px;
+    flex-direction: column;
+    
 }
 
+#skills ul li{
+float: left;
+margin-right: 30px;
+box-shadow: 8px 8px 16px 0px #888888;
+background-color:darkkhaki;
+font-weight: bold;
+color: black;
+
+}
+
+
+ h3{
+    font-size: 20px;
+    
+ }
 #projects{
     position: absolute;
-    left: 0;
-    top: 700px;
+    left: 10px;
+    top: 550px;
 }
+#projects span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+ul{
+        list-style-type: none;
+}
+ 
+#horiseon-seo{
+    position:relative;
+left: 20px;
+    top: 20px;
+  width: 30vw;
+  height: 40vh;
+  background-image: url('https://thumbs.dreamstime.com/z/projects-houses-as-background-architect-workplace-architectural-project-blueprints-blueprint-rolls-wooden-desk-table-181760824.jpg');
+  background-size: cover;
+  font-size: 20px;
+  font-family: serif;
+  
+}
+
+#web-practice{
+    position: relative;
+    bottom: 275px;
+    left: 500px;
+    width: 30vw;
+    height: 40vh;
+    background-image: url("https://media.istockphoto.com/id/1365169514/video/learning-from-books-or-textbooks-and-the-internet-helps-create-new-ideas-slowly-moving.jpg?s=640x640&k=20&c=boT0zUPwwEHuIS-LXCbBdsx8D2KgtBLi_gNY2KR1bSA=");
+  background-size: 20px;
+  font-family: serif;
+}
+
 
 #contact{
     position: absolute;
-    left: 0;
-    top: 900px;
+    left: 10px;
+    top: 850px;
 }
 .footer{
     display: flex;
@@ -173,26 +232,26 @@ left: 80px;
 font-size: 20px;
     background-color:rgb(91, 64, 64) ;
     position: relative;
-    height: 90px;
-    margin-bottom: 0px;
+    height: 130px;
+   
    
     
 }
 .personal-info{
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 50px;
 }
 .links{
     display: flex;
     position: absolute;
     left: 500px;
-    top: 5px;
+    top: 50px;
 }
 .get-in-touch{
     position: absolute;
     right: 70px;
-    top: 10px;
+    top: 50px;
 }
 
 .links a{

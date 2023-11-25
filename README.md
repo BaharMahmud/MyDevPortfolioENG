@@ -2,6 +2,9 @@
 This is the repository for dev portfolio project. The gitHub url is https://github.com/BaharMahmud/MyDevPortfolioENG. 
 Clone the project from gitHub account to your local using the SSH url. The index.html contains the html code for the web and style.css is the file for styling the web page.
 This project is an indivual project for creatig first developer portfolio for the bootcamp challenge week 2. The project created based on user story and acceptance criteria below:
+The first section is the description about the developer.This section will get improvements over the time and profile picture will be replaced.There is skills section which will expand over the time.
+Project section have few projects and when clicked on the images it takes the user to the webpage of that work. These project will also increase over time. Contact information contains all the possible ways of contacting the developer.
+Footer is designed to be always in front of the end use and move along the page.
 
 ## User Story
 

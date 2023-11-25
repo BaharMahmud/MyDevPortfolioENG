@@ -1,4 +1,7 @@
-/* remove default CSS styling */
+:root{
+    --hoverColor:rgb(39, 27, 117)
+}
+
 *{
 
     margin: 0;
@@ -6,259 +9,273 @@
     box-sizing: inherit;
     
 }
-/* general settings for all body styling */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
- 
- 
-  
+
+body{
+  display: block;
 }
-/* header styling */
 header{
-    background-color: rgb(91, 64, 64);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 60px;
-    position: relative;
-    
-    
-
+    display: block;
+height: 80px;
+width:100% ;
+background-color: #101010;
 }
 
- header h1{
-    
-color: blueviolet ;
+header h1{
+    color: blue;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: monospace;
     font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  position: absolute;
-  top: 30px;
-  
-}
-header nav{
- position: absolute;
- top: 50px;
- 
- 
+    font-weight: 200;
+
 }
 
-header nav ul {
+nav{
+    float: right;
+    height: 100%;
+}
+
+nav a{
+    height: 100%;
+    display:table;
+    float: left;
+    padding: 0 20px;
+}
+header nav ul li{
     display: flex;
-    
-    justify-content: center;
-    list-style: none;
 }
-
-header nav ul li {
-    align-items: flex-start;
-    padding: 10px;
-    font-size: 16px;
-    margin: 20px 20px 0 0px;
-    margin-right: 150px;
-    margin-left: 60px;
-}
-
 header a{
-    color: blueviolet;
+    color: #7f72a2;
 }
-header nav ul li a:hover{
-color: rgb(39, 27, 117);
-}
- 
+ nav ul a:hover{
+        color:red;
+        }
+
 .hero{
-    background-size: cover;
-    display: flex;
-    background-position: center;
-    height: 700px;
-    justify-content: space-around;
+ width: 100%;
+ height: 110vh;
+ background-position: center;
+ background-size: cover;
+    padding: 0 1em;
+    max-width: 60rem;
     position: relative;
-    height: 130vh;
-    left: 10px;
-    
-    }
-
-    .fa {
-        padding: 10px;
-        font-size: 40px;
-        width: 20px;
-        text-align: center;
-        text-decoration: none;
-        position: relative;
-        left: 150px;
-        
-        
-      }
-     
-      .fa:hover {
-        opacity: 0.7;
-      }
-      
-      .fa-facebook {
-        background: #3B5998;
-        color: white;
-      }
-      .fa-instagram {
-    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);  }
-    
- 
-#first-greeting{
-    position: absolute;
-    top: 20px;
-    left: 0;
-
    
- }
- .fa-github{
-    background-color: rgb(76, 67, 67);
-    color: black;
- }
 
- #first-greeting{
-margin: 0px;
-padding: 10px;
+}
+ #first-greeting {
+display: flex;
+flex-wrap: wrap;
+max-width: 700px;
+height: auto;
+margin: auto;
+color: #bd6699;
 position: relative;
-left: 80px;
- }
+left:450px;
 
- #first-greeting h2{
-    margin-bottom:10px;
-    box-shadow: #3B5998;   
- }
- 
 
- #first-greeting p{
-    margin-top: 10px;
-   margin-bottom: 20px;
+ }
+#I-am{
     position: relative;
-    right:  100px; 
-    position: relative;
-    right: 90px;
- }
-
- #about{
-    margin-top: 30px;
-       position: absolute;
-       top: 150px;
-       left: 0px;
-   
-    }
-    #about img{
-      
-       width: 100;
-       float: left;
-    }
-
-
-.emphasized{
-font-weight: bold;}
-
-#skills{
-    display: flex;
-    margin-left: 20px;
-    position: absolute;
-    left: 0;
-    top: 450px;
-    flex-direction: column;
-    
+    right: 150px;
+    margin-top: 50px;
 }
-
-#skills ul li{
-float: left;
-margin-right: 30px;
-box-shadow: 8px 8px 16px 0px #888888;
-background-color:darkkhaki;
-font-weight: bold;
-color: black;
-
-}
-
-
- h3{
-    font-size: 20px;
-    
- }
-#projects{
-    position: absolute;
-    left: 10px;
-    top: 550px;
-}
-#projects span {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-
-ul{
-        list-style-type: none;
-}
- 
-#horiseon-seo{
-    position:relative;
-left: 20px;
-    top: 20px;
-  width: 30vw;
-  height: 40vh;
-  background-image: url('https://thumbs.dreamstime.com/z/projects-houses-as-background-architect-workplace-architectural-project-blueprints-blueprint-rolls-wooden-desk-table-181760824.jpg');
-  background-size: cover;
-  font-size: 20px;
-  font-family: serif;
-  
-}
-
-#web-practice{
-    position: relative;
-    bottom: 275px;
-    left: 500px;
-    width: 30vw;
-    height: 40vh;
-    background-image: url("https://media.istockphoto.com/id/1365169514/video/learning-from-books-or-textbooks-and-the-internet-helps-create-new-ideas-slowly-moving.jpg?s=640x640&k=20&c=boT0zUPwwEHuIS-LXCbBdsx8D2KgtBLi_gNY2KR1bSA=");
-  background-size: 20px;
-  font-family: serif;
-}
-
-
-#contact{
-    position: absolute;
-    left: 10px;
-    top: 850px;
-}
-.footer{
+.par{
     display: flex;
     flex-wrap: wrap;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
-font-size: 20px;
-    background-color:rgb(91, 64, 64) ;
-    position: relative;
-    height: 130px;
-   
-   
-    
+   position: relative;
+   right: 80px;
+   top: 45px;
+   font-family: Arial;
+   letter-spacing: 1.1 px;
+   line-height: 20px;
 }
-.personal-info{
+
+ .fa {
+display: flex;
+flex-wrap: wrap;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: #84809c;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    right: 400px;
+    top: 80px;
+    
+    
+  }
+ 
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);  }
+
+.fa-github{
+    background-color:#efedea;
+    border: 2px solid black;
+    color: #101010;
+ }
+
+
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+
+ 
+}
+
+#about .emphasized{
+    font-size: 18px;
+   text-decoration-line: underline;
+   font-weight: lighter;
+   color: #101010;
+}
+.skills-header{
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #7f72a2;
+    margin: 25px;
+    font-size: 35px;
+  
+}
+.skills-list ul li{
+
+    float:left;
+  margin: 65px 30px 30px 45px;
+  background-color: #bd6699;
+  box-shadow: #dd8506;
+ 
+}
+
+.projects-header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #7f72a2;
+    margin: 25px;
+    font-size: 30px;
+}
+
+
+.projects-header span{
+font-weight: 300;
+    font-size: 25px;
+}
+
+.project-url-images a{
+    height: 100%;
+    display:table;
+    float: left;
+    padding: 0 20px;
+
+}
+
+.project-url-images a img{
+    float: left;
+    height: 200px;
+    width: 250px;
+    margin: 0;
+   padding: 0;
+}
+.project-url-images a  li
+{list-style-type: none;}
+.contact-me-section {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #7f72a2;
+    margin: 25px;
+    font-size: 30px;
+}
+#contact{
+    margin-top: 80px;
+    position: relative;
+    bottom: 0px;
+   padding-bottom: 50px;
+  
+   
+}
+.contact-list li{
+    float: left;
+    margin: 0px 25px 25px 15px;
+    color: #7f72a2;
+    font-size: 16px;
+    font-weight: bold;
+}
+span[data-descr] {
+    position: relative;
+    text-decoration: underline;
+    color: #7f72a2;
+    cursor: help;
+  }
+span[data-descr]:hover::after{
+    content: attr(data-descr);
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 24px;
+    min-width: 200px;
+    border: 1px #aaaaaa solid;
+    border-radius: 10px;
+    background-color: #ffffcc;
+    padding: 12px;
+    color: #000000;
+    font-size: 14px;
+    z-index: 1;}
+    footer {
+      position: fixed;
+     bottom: 0;
+     left: 0;
+        width:100%;
+        background-color: #84809c;
+        }
+   
+
+
+
+
+.footer li{
+float: left;
+list-style-type: none;
+margin-right: 180px;
 }
+
 .links{
-    display: flex;
-    position: absolute;
-    left: 500px;
-    top: 50px;
-}
-.get-in-touch{
-    position: absolute;
-    right: 70px;
-    top: 50px;
+    flex-grow: 2;
 }
 
-.links a{
-color: rgb(32, 32, 211);
-position: relative;
-top: 25px;
-right: 65px;
-margin-right:20px ;
+.links li{
+    float: left;
+    margin-right: 20px;
 
+}
+.links  a li:hover{
+    color: red;
+}
+@media only screen and (max-width: 900px) and (min-width:481){
+    html,body,footer{
+        width: 100%;
+        height: 100%;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+
+
+    }
+}
+    @media only screen and  (min-width:200){
+    #first-greeting{
+        height: 150;
+    }
 }

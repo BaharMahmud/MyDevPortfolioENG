@@ -10,35 +10,36 @@
   </head>
 
     <body>
-
+      
 <header>
     <h1>
         BARBARA SMITH
     </h1>
-  
+     
     <nav>
         <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <a href="#about" class="nav-link"><li>About</li></a>
+          <a href="#skills" class="nav-link"><li>Skills</li></a>
+          <a href="#projects" class="nav-link"><li>Projects</li></a>
+          <a href="#contact" class="nav-link"><li>Contact</li></a>
         </ul>
   </nav>
 </header>
-    
+
 <main class="hero">
-    <section id="first-greeting" class="card">
-        <h2>Hi, I am Barbara Smith | Software Engineer</h2>
+    <section id="first-greeting" >
+        <h2 class="par">Hi, I am Barbara Smith | Software Engineer</h2>
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-instagram"></a>
         <a href="#" class="fa fa-github"></a>
-        <p>
+        <p id="I-am"class="par">
+           
            I am creative, honest and open-mined working mom, houswife, traveler, explorer and  quick learner.
           </p>
 
   </section>
 
-  <section id="about" class="card">
+  <section id="about" >
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhz1SSNcaEBhlNtUwQCe0x0gpLLySGyCFkkQ&usqp=CAU" alt="my profile picture">
 
 <h3>About Me</h3>
@@ -56,7 +57,8 @@
 
     <p>
     I started my journey in IT when I was 18. And now I've spend most of my life being in front of
-    computer and coding. As a developer I always prirotize my code readibilty the most.
+    computer and coding. As a    <span tabindex="0" data-descr="combination of UI(front end, backend and database knowledge)"></span>
+ developer I always prirotize my code readibilty the most.
     I don't only concentrate what others see but also want to make it more usable and readible 
     for people behind the scene.
 </p>
@@ -74,7 +76,8 @@
 
 </section>
 <section id="skills" class="card">
-    <h3>Skills</h3>
+    <h3 class="skills-header">Skills</h3>
+   <div class="skills-list">
     <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -82,24 +85,26 @@
         <li>C#</li>
         <li>Java</li>
  </ul>
+</div>
 </section>
 
 <section id="projects" class="card">
-    <h3>Projects
-
-    <p><span class="fullstack"> Full Stack Developer</span></p>
+    <h3 class="projects-header">Projects     <span tabindex="0" data-descr="combination of UI(front end, backend and database knowledge)">
+        |
+    </span>
+    <span class="fullstack"> Full Stack Developer</span>
 </h3>
-    <div class="individual-projects"></div>
-    <ul>     
-    <li id="horiseon-seo"> <a href="https://baharmahmud.github.io/HoriseonSSSProjectRepo/" id="Horiseon-project">Horiseon Social Solution Services</a></li>
- <li id="web-practice"> <a href="https://github.com/BaharMahmud/NewWebPractice" id="New-web-practice-project">New Web Practice</a></li>
-<li id="landing-page"> <a href="https://github.com/BaharMahmud/LandingPage" id="landing-page-projrct">Landing page</a></li>
-</ul>
+    <div class="clearfix">
+  <div class="project-url-images">     
+<a href="https://baharmahmud.github.io/HoriseonSSSProjectRepo/" id="Horiseon-project"><img src="https://thumbs.dreamstime.com/z/projects-houses-as-background-architect-workplace-architectural-project-blueprints-blueprint-rolls-wooden-desk-table-181760824.jpg" alt="working-docs"><li> Horiseon SSS Project</li></a>
+ <a href="https://github.com/BaharMahmud/NewWebPractice" id="New-web-practice-project"><img src="https://media.istockphoto.com/id/1365169514/video/learning-from-books-or-textbooks-and-the-internet-helps-create-new-ideas-slowly-moving.jpg?s=640x640&k=20&c=boT0zUPwwEHuIS-LXCbBdsx8D2KgtBLi_gNY2KR1bSA=" alt="lighting-lamp"><li>First Web Practice</li></a>
+ <a href="https://github.com/BaharMahmud/LandingPage" id="landing-page-projrct"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJnkrSDVjNt-zi0KJmwYLhakE5AI5a9zhkg&usqp=CAU" alt="colorful-painty-sky" ><li>Landing page</li></a>
+
 
 </section>
-
+</div>
 <section id="contact" class="card">
- <h3>
+ <h3 class="contact-me-section">
     Contact Me
  </h3>
  <div class="contact-list">
@@ -110,30 +115,32 @@
  </ul>
 </div>
 </section>
-
-
 </main>
 
-<footer class="footer">
-    <div class="personal-info">
+<footer >
+    <div class="footer">
+    <li class="personal-info">
             <h4>Bahar Mahmud</h4>
 <p>2023 Built and designed by Bahar Mahmud</p>
- </div>
- <div class="links">
+ </li>
+ <li class="links">
     <h3>Links</h3>
-    <a href="#about" class="nav-link">About</a>
-              <a href="#skills" class="nav-link">Skills</a>
-              <a href="#projects" class="nav-link">Projects</a>
-              <a href="#contact" class="nav-link">Contact</a>
-
- </div>
- <div class="get-in-touch">
+    <ul>
+    
+    <a href="#about" class="nav-link"><li>About</li></a>
+       <a href="#skills" class="nav-link"><li>Skills</li></a>
+        <a href="#projects" class="nav-link"><li>Projects</li></a>
+       <a href="#contact" class="nav-link"><li>Contact</li></a>
+            </ul>
+ </li>
+ <li class="get-in-touch">
     <h4>Get in touch</h4>
     <p>
         Phone: (567) 895-34-45
         Email: barbaraSmithSE@gmail.com
     </p>
- </div>
+</li>
+</div>
 </footer>
 
 
